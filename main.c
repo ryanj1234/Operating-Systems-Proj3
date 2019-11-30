@@ -598,7 +598,7 @@ void remove_dir(char* dir_name, int curr_dir) {
     lseek(fileDescriptor, location, 0);
     write(fileDescriptor, &new_dir, sizeof(new_dir));
 
-    printf("File cleared at offset: %d\n", location);
+    // printf("File cleared at offset: %d\n", location);
 }
 
 int get_free_inode() {
